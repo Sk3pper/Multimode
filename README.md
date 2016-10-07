@@ -10,6 +10,6 @@ The device file needs to also support other ioctl commands in order to define th
 
 Parameters that are left to the designer, which should be selected via reasonable policies, are:
 
-the maximum size of device file buffered data or individual data segments (this might also be made tunable via ioctl up to an absolute upper limit)
-the maximum storage that can be (dynamically) reserved for any individual instance of the device file
-the range of device file minor numbers supported by the driver (it could be the interval [0-255] or not)
+- the maximum size of device file buffered data or individual data segments (this might also be made tunable via ioctl up to an absolute upper limit)
+- the maximum storage that can be (dynamically) reserved for any individual instance of the device file
+- the range of device file minor numbers supported by the driver (it could be the interval [0-255] or not)
