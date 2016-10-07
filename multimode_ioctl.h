@@ -1,0 +1,16 @@
+/* IOCTL */
+#include <linux/ioctl.h>
+/*_IO is basically used to send device configurable 
+ *commands to intended device 
+ */
+#define MULTIMODE_SET_PACKET 		_IO(250, 0)
+#define MULTIMODE_SET_STREAM 		_IO(250, 1)
+#define MULTIMODE_SET_BLOCKING 		_IO(250, 2)
+#define MULTIMODE_SET_NOTBLOCKING 	_IO(250, 3)
+#define MULTIMODE_GET_LINKED_LIST_SIZE	_IO(250, 4)
+#define MULTIMODE_SET_LINKED_LIST_SIZE	_IO(250, 5)
+#define MULTIMODE_GET_PACKET_MAX_SIZE	_IO(250, 6)
+#define MULTIMODE_SET_PACKET_MAX_SIZE	_IO(250, 7)
+#define MULTIMODE_GET_PACKET_MIN_SIZE	_IO(250, 8)
+#define MULTIMODE_SET_PACKET_MIN_SIZE	_IO(250, 9)
+#define MULTIMODE_GET_SUMMARY_SETTING	_IO(250, 10)
